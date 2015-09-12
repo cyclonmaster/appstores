@@ -6,50 +6,133 @@
     <title>AppStore</title>
 	<link rel="shortcut icon" href="resources/appsdata/AppStoreicon.png">
     <style type="text/css">
-         /**
-         * Example of an initial loading indicator.
-         * It is recommended to keep this as minimal as possible to provide instant feedback
-         * while other resources are still being loaded for the first time
-         */
-        html, body {
-            height: 100%;
-            background-color: #1985D0
-        }
+         body { background: #0d28a0 }
+		/* ANIMATION */
+		@-webkit-keyframes rotate { 
+		  from { -webkit-transform: rotate(0deg) } 
+		  to { -webkit-transform: rotate(360deg) } }
+		@-moz-keyframes rotate { 
+		  from { -moz-transform: rotate(0deg) } 
+		  to { -moz-transform: rotate(360deg) } }
+		@-o-keyframes rotate { 
+		  from { -o-transform: rotate(0deg) } 
+		  to { -o-transform: rotate(360deg) } }
+		@keyframes rotate { 
+		  from { transform: rotate(0deg) } 
+		  to { transform: rotate(360deg) } }
 
-        #appLoadingIndicator {
-            position: absolute;
-            top: 50%;
-            margin-top: -15px;
-            text-align: center;
-            width: 100%;
-            height: 30px;
-            -webkit-animation-name: appLoadingIndicator;
-            -webkit-animation-duration: 0.5s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: linear;
-        }
+		@-webkit-keyframes fade { 
+		  from { opacity: 1 }
+		  50% { opacity: 0 }
+		  to { opacity: 1 } }
+		@-moz-keyframes fade { 
+		  from { opacity: 1 }
+		  50% { opacity: 0 }
+		  to { opacity: 1 } }
+		@-o-keyframes fade { 
+		  from { opacity: 1 }
+		  50% { opacity: 0 }
+		  to { opacity: 1 } }
+		@keyframes fade { 
+		  from { opacity: 1 }
+		  50% { opacity: 0 }
+		  to { opacity: 1 } }
 
-        #appLoadingIndicator > * {
-            background-color: #FFFFFF;
-            display: inline-block;
-            height: 30px;
-            -webkit-border-radius: 15px;
-            margin: 0 5px;
-            width: 30px;
-            opacity: 0.8;
-        }
+		/* CONTAINER */
+		.container {
+		  width: 150px;
+		  height: 150px;
+		  /* PRESENTATIONAL PURPOSES */
+		  margin: auto;
+		  position: absolute;
+		  top: 0; left: 0; bottom: 0; right: 0;
+		  /**/
+		  cursor: pointer;
+		  -webkit-user-select: none;
+		  -webkit-border-radius: 50%;
+		  -moz-border-radius: 50%;
+		  border-radius: 50%;
+		  -webkit-box-shadow: 0 0 0 6px #222,
+			0 0 6px 10px #444;
+		  -moz-box-shadow: 0 0 0 6px #222,
+			0 0 6px 10px #444;
+		  box-shadow: 0 0 0 6px #222,
+			0 0 6px 10px #444
+		}
 
-        @-webkit-keyframes appLoadingIndicator{
-            0% {
-                opacity: 0.8
-            }
-            50% {
-                opacity: 0
-            }
-            100% {
-                opacity: 0.8
-            }
-        }
+		/* TEXT */
+		#content {
+		  background: #222;
+		  background: -webkit-linear-gradient(#222,#111);
+		  background: -moz-linear-gradient(#222,#111);
+		  background: -o-linear-gradient(#222,#111);
+		  background: linear-gradient(#0d28a0,#111);
+		  position: absolute;
+		  top: 5px;
+		  left: 5px;
+		  right: 5px;
+		  bottom: 5px;
+		  -webkit-border-radius: 50%;
+		  -moz-border-radius: 50%;
+		  border-radius: 50%;
+		  text-align: center;
+		  font: normal normal normal 12px/140px 
+			'Electrolize', Helvetica, Arial, sans-serif;
+		  color: #fff
+		}
+
+		#content span {
+		  vertical-align: middle;
+		  -webkit-animation: fade 1s linear infinite;
+		  -moz-animation: fade 1s linear infinite;
+		  -o-animation: fade 1s linear infinite;
+		  animation: fade 1s linear infinite
+		}
+
+		/* SPINNING GRADIENT */
+		.ring {
+		  margin: 0 auto;
+		  border-radius: 110px;
+		  padding: 10px;
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		  -webkit-animation: rotate 1s linear infinite;
+		  -moz-animation: rotate 1s linear infinite;
+		  -o-animation: rotate 1s linear infinite;
+		  animation: rotate 1s linear infinite
+		}
+
+		/* COLORS */
+		.green { 
+		  background: -webkit-linear-gradient(#bfff00,transparent,#bfff00);
+		  background: -moz-linear-gradient(#bfff00,transparent,#bfff00);
+		  background: -o-linear-gradient(#bfff00,transparent,#bfff00);
+		  background: linear-gradient(#bfff00,transparent,#bfff00)
+		}
+
+		.blue {
+		  background: -webkit-linear-gradient(#3cf,transparent,#3cf);
+		  background: -moz-linear-gradient(#3cf,transparent,#3cf);
+		  background: -o-linear-gradient(#3cf,transparent,#3cf);
+		  background: linear-gradient(#3cf,transparent,#3cf)
+		}
+
+		.red {
+		  background: -webkit-linear-gradient(#cd5c5c,transparent,#cd5c5c);
+		  background: -moz-linear-gradient(#cd5c5c,transparent,#cd5c5c);
+		  background: -o-linear-gradient(#cd5c5c,transparent,#cd5c5c);
+		  background: linear-gradient(#cd5c5c,transparent,#cd5c5c)
+		}
+
+		.purple {
+		  background: -webkit-linear-gradient(#e166e1,transparent,#e166e1);
+		  background: -moz-linear-gradient(#e166e1,transparent,#e166e1);
+		  background: -o-linear-gradient(#e166e1,transparent,#e166e1);
+		  background: linear-gradient(#e166e1,transparent,#e166e1)
+		}
     </style>
     <!-- The line below must be kept intact for Sencha Command to build your application -->
     <script type="text/javascript">(function(k){function t(b){function c(a,b){var f=a.length,j,d;for(j=0;j<f;j++){d=a[j];var c=a,e=j,q=void 0;"string"==typeof d&&(d={path:d});d.shared?(d.version=d.shared,q=d.shared+d.path):(G.href=d.path,q=G.href);d.uri=q;d.key=g+"-"+q;h[q]=d;c[e]=d;d.type=b;d.index=j;d.collection=a;d.ready=!1;d.evaluated=!1}return a}var f;"string"==typeof b?(f=b,b=H(f)):f=JSON.stringify(b);var g=b.id,e=g+"-"+I+r,h={};this.key=e;this.css=c(b.css,"css");this.js=c(b.js,"js");l.microloaded=!0;var n=window.Ext.filterPlatform=
@@ -69,10 +152,12 @@ null!==m.readyState.match(c)?E(b):F("DOMContentLoaded",function(){navigator.stan
 k.Ext={};l.blink=function(b){var c=x(b.id+"-"+I+r);B("viewport","width\x3ddevice-width, initial-scale\x3d1.0, maximum-scale\x3d1.0, minimum-scale\x3d1.0, user-scalable\x3dno");B("apple-mobile-web-app-capable","yes");B("apple-touch-fullscreen","yes");c?(b=new t(c),O(b)):s(r,function(c){b=new t(c);b.store();O(b)})}})(this);Ext.blink({id:"9301f0aa-9a91-4429-bb88-8efacad04236"});</script>
 </head>
 <body>
-    <div id="appLoadingIndicator">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+	<div id="appLoadingIndicator">
+	<div class="container" style="">
+  <div class='ring blue'></div>
+  <div id="content">
+    <span>Loading...</span>
+  </div>
+</div>
 </body>
 </html>
