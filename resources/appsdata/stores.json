@@ -14,7 +14,7 @@
         }, {
             id : 2,
             appname : '<center>pilakTV</center>',
-            appdescription : '<center><table border="0" width="310"><tbody><tr><td valign="top"><center><table border="0" width="95%"><tbody><tr><td rowspan="2"valign="top"><div><img src="resources/appsdata/pilakTV.png"height="100"width="100"></div><br><div align="center"><form action="resources/appsdata/pilakTVv0.1.1.apk"><input type="submit" style="background-color:lightgreen" name="button" id="button" value="   Install   "></form></div><td valign="top">&nbsp;<br></td><td valign="top"><big><b>pilakTV</b></big></td><tr><td valign="top"></td><td valign="top"><div>Watch TV online.</div><div><i>Platform:Android</i></div><div><i>Version:0.1.1</i></div><div><i>03/12/2015</i></div></td></tr></tbody></table></center></td></tr></tbody></table></center>'
+            appdescription : '<center><table border="0" width="310"><tbody><tr><td valign="top"><center><table border="0" width="95%"><tbody><tr><td rowspan="2"valign="top"><div><img src="resources/appsdata/pilakTV.png"height="100"width="100"></div><br><div align="center"><form action="resources/appsdata/pilakTVv0.1.2.apk"><input type="submit" style="background-color:lightgreen" name="button" id="button" value="   Install   "></form></div><td valign="top">&nbsp;<br></td><td valign="top"><big><b>pilakTV</b></big></td><tr><td valign="top"></td><td valign="top"><div>Watch TV and listen to Radio online.</div><div><i>Platform:Android</i></div><div><i>Version:0.1.2</i></div><div><i>03/12/2015</i></div></td></tr></tbody></table></center></td></tr></tbody></table></center>'
         }, {
             id : 1,
             appname : '<center>CyberRaiders</center>',
