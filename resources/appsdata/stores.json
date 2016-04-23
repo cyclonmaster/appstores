@@ -2,7 +2,7 @@
     "aaData" : [{
             id : 7,
             appname : '<center>Amazon App Store</center>',
-            appdescription : '<center><table border="0" width="310"><tbody><tr><td valign="top"><center><table border="0" width="95%"><tbody><tr><td valign="top"><div align="center"><a href="http://www.amazon.com/s/ref=bl_sr_mobile-apps?_encoding=UTF8&field-brandtextbin=cygnosis&node=2350149011"><img src="resources/images/iklankomikhk.jpg" width="310"></a></div></td><tr><td valign="top"><div>Tempah Sekarang!</div><div></div><div></div></td></tr></tbody></table></center></td></tr></tbody></table></center>'
+            appdescription : '<center><table border="0" width="310"><tbody><tr><td valign="top"><center><table border="0" width="95%"><tbody><tr><td valign="top"><div align="center"><img src="resources/images/iklankomikhk.jpg"></div></td><tr><td valign="top"><div>Tempah Sekarang!</div><div></div><div></div></td></tr></tbody></table></center></td></tr></tbody></table></center>'
         }, {
             id : 6,
             appname : '<center>Amazon App Store</center>',
