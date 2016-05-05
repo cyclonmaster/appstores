@@ -1,32 +1,24 @@
 {
     "aaData" : [{
-            id : 7,
+            id : 5,
             appname : '<center>Amazon App Store</center>',
             appdescription : '<center><table border="0" width="310"><tbody><tr><td valign="top"><center><table border="0" width="95%"><tbody><tr><td valign="top"><div align="center"><img src="resources/images/iklankomikhk.jpg"></div></td><tr><td valign="top"><div><table border="0"><tr><td>Tempah Sekarang!</td><td> <a href="https://telegram.me/cyclonmaster"><img src="http://cyclonmaster.github.io/appstore/resources/images/telegramb.png"></a></td></tr></table></div><div></div><div></div></td></tr></tbody></table></center></td></tr></tbody></table></center>'
         }, {
-            id : 6,
+            id : 4,
             appname : '<center>Amazon App Store</center>',
             appdescription : '<center><table border="0" width="310"><tbody><tr><td valign="top"><center><table border="0" width="95%"><tbody><tr><td valign="top"><div align="center"><a href="http://www.amazon.com/s/ref=bl_sr_mobile-apps?_encoding=UTF8&field-brandtextbin=cygnosis&node=2350149011"><img src="resources/images/az-app-store-banner.png"height="83"width="250"></a></div></td><tr><td valign="top"><div>Kesemua cygnosis apps turut tersenarai dalam Amazon App Store. Install Amazon App Store sekarang.</div><div></div><div></div></td></tr></tbody></table></center></td></tr></tbody></table></center>'
         }, {
-            id : 5,
+            id : 3,
             appname : '<center>NangAntapTu</center>',
             appdescription : '<center><table border="0" width="310"><tbody><tr><td valign="top"><center><table border="0" width="95%"><tbody><tr><td rowspan="2"valign="top"><div><img src="resources/appsdata/NangAntapTu.png"height="100"width="100"></div><br><div align="center"><form action="resources/appsdata/NangAntapTuv0.1.3.apk"><input type="submit" style="background-color:lightgreen" name="button" id="button" value="   Install   "></form></div><td valign="top">&nbsp;<br></td><td valign="top"><big><b>NangAntapTu</b></big></td><tr><td valign="top"></td><td valign="top"><div>Baca Komik HK dengan mudah. Wajah baru dengan sistem yang lebih dinamik. Lebih ringan dan mesra pembaca.</div><div><i>Platform:Android</i></div><div><i>Version:0.1.3</i></div><div><i>23/11/2015</i></div></td></tr></tbody></table></center></td></tr></tbody></table></center>'
         }, {
-            id : 4,
+            id : 2,
             appname : '<center>pilakTV</center>',
             appdescription : '<center><table border="0" width="310"><tbody><tr><td valign="top"><center><table border="0" width="95%"><tbody><tr><td rowspan="2"valign="top"><div><img src="resources/appsdata/pilakTV.png"height="100"width="100"></div><br><div align="center"><form action="resources/appsdata/pilakTVv0.1.4.apk"><input type="submit" style="background-color:lightgreen" name="button" id="button" value="   Install   "></form></div><td valign="top">&nbsp;<br></td><td valign="top"><big><b>pilakTV</b></big></td><tr><td valign="top"></td><td valign="top"><div>Watch TV and listen to Radio online.</div><div><i>Platform:Android</i></div><div><i>Version:0.1.4</i></div><div><i>03/02/2016</i></div></td></tr></tbody></table></center></td></tr></tbody></table></center>'
         }, {
-            id : 3,
+            id : 1,
             appname : '<center>pilakTV x86(ASUS etc)</center>',
             appdescription : '<center><table border="0" width="310"><tbody><tr><td valign="top"><center><table border="0" width="95%"><tbody><tr><td rowspan="2"valign="top"><div><img src="resources/appsdata/pilakTV.png"height="100"width="100"></div><br><div align="center"><form action="resources/appsdata/pilakTVv0.1.4-x86.apk"><input type="submit" style="background-color:lightgreen" name="button" id="button" value="   Install   "></form></div><td valign="top">&nbsp;<br></td><td valign="top"><big><b>pilakTV x86(ASUS etc)</b></big></td><tr><td valign="top"></td><td valign="top"><div>Watch TV and listen to Radio online.</div><div><i>Platform:Android</i></div><div><i>Version:0.1.4</i></div><div><i>03/02/2016</i></div></td></tr></tbody></table></center></td></tr></tbody></table></center>'
-        }, {
-            id : 2,
-            appname : '<center>NangAntap Baca Komik</center>',
-            appdescription : '<center><table border="0" width="310"><tbody><tr><td valign="top"><center><table border="0" width="95%"><tbody><tr><td rowspan="2"valign="top"><div><img src="resources/appsdata/BelangTarungBGsmalldot.png"height="100"width="100"></div><br><div align="center"><form action="resources/appsdata/nangantapreleasev7.apk"><input type="submit" style="background-color:lightgreen" name="button" id="button" value="   Install   "></form></div><td valign="top">&nbsp;<br></td><td valign="top"><big><b>NangAntap Baca Komik</b></big></td><tr><td valign="top"></td><td valign="top"><div>Read Komik HK collection in bahasa melayu online.</div><div><i>Platform:Android</i></div><div><i>Version:1.7.0</i></div><div><i>18/02/2015<b>(discontinued)</b></i></div></td></tr></tbody></table></center></td></tr></tbody></table></center>'
-        }, {
-            id : 1,
-            appname : '<center>CyberRaiders</center>',
-            appdescription : '<center><table border="0" width="310"><tbody><tr><td valign="top"><center><table border="0" width="95%"><tbody><tr><td rowspan="2"valign="top"><div><img src="resources/appsdata/CyberRaiders.png"height="100"width="100"></div><br><div align="center"><form action="resources/appsdata/cyberraiders.apk"><input type="submit" style="background-color:lightgreen" name="button" id="button" value="   Install   "></form></div><td valign="top">&nbsp;<br></td><td valign="top"><big><b>CyberRaiders</b></big></td><tr><td valign="top"></td><td valign="top"><div>Strategies and conquer the universe.</div><div><i>Platform:Android</i></div><div><i>Version:0.1.0</i></div><div><i>05/09/2015</i></div></td></tr></tbody></table></center></td></tr></tbody></table></center>'
         }
     ]
 }
