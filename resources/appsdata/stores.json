@@ -2,7 +2,7 @@
     "aaData" : [{
             "id" : 7,
             "appname" : "<center>Iklan Komik</center>",
-            "appdescription" : "<center><table border='0' width='100%'><tbody><tr><td valign='top'><center><table border='0' width='95%'><tbody><tr><td valign='top'><div align='center'><img src='resources/images/iklankomikhk.jpg'></div></td><tr><td valign='top'><div><table border='0'><tr><td>Tempah Sekarang!</td><td> <a href='https://telegram.me/cyclonmaster'><img src='http://cyclonmaster.github.io/appstore/resources/images/telegramb.png'></a></td></tr></table></div><div></div><div></div></td></tr></tbody></table></center></td></tr></tbody></table></center>"
+            "appdescription" : "<center><table border='0' width='100%'><tbody><tr><td valign='top'><center><table border='0' width='95%'><tbody><tr><td valign='top'><div align='center'><img src='resources/images/iklankomikhk.jpg' width='100%></div></td><tr><td valign='top'></div><div align='center'><table border='0'><tr><td>Tempah Sekarang!</td><td> <a href='https://telegram.me/cyclonmaster'><img src='http://cyclonmaster.github.io/appstore/resources/images/telegramb.png'></a></td></tr></table></div><div></div><div></div></td></tr></tbody></table></center></td></tr></tbody></table></center>"
         }, {
             "id" : 6,
             "appname" : "<center>Amazon App Store</center>",
