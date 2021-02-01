@@ -34,8 +34,8 @@
 					$$('#app_list').html(data_case_list);
 					$$('.page-content').scrollTop(0);
 					
-					notFound.style.display = 'none';
-					found.style.display = 'block';
+					//notFound.style.display = 'none';
+					//found.style.display = 'block';
 				} else {
 					//no items found
 					app.dialog.alert('No Item Found!');
@@ -43,9 +43,9 @@
 			},
 			function(err){
 				app.dialog.close();
-				found.style.display = 'none';
+				//found.style.display = 'none';
 				$$('#err_msg').html("<ul><li><a style='color: var(--f7-block-text-color);'>No record found.</a></li></ul>");
-				notFound.style.display = "block";
+				//notFound.style.display = "block";
 			});
 	})
 	return {
@@ -68,8 +68,8 @@
 						$$('#app_list').html(data_case_list);
 						$$('.page-content').scrollTop(0);
 						
-						notFound.style.display = 'none';
-						found.style.display = 'block';
+						//notFound.style.display = 'none';
+						//found.style.display = 'block';
 					} else {
 						//no items found
 						app.dialog.alert('No Item Found!');
@@ -77,9 +77,9 @@
 				},
 				function(err){
 					app.dialog.close();
-					found.style.display = 'none';
+					//found.style.display = 'none';
 					$$('#err_msg').html("<ul><li><a style='color: var(--f7-block-text-color);'>No record found.</a></li></ul>");
-					notFound.style.display = "block";
+					//notFound.style.display = "block";
 				});
             }
 		},
