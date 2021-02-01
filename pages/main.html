@@ -1,0 +1,102 @@
+<template>
+<div class="page" data-name="mainpage">
+	<div class="navbar">
+		<div class="navbar-bg"></div>
+		<div class="navbar-inner">
+		  <div class="left"><a class="link"></a></div>
+		  <div class="title">CyclonStore</div>
+		  <div class='right'><a class="link"></a></div>
+		</div>
+	</div>
+	<div class="page-content">
+		<div class="list media-list chevron-center">
+		  <ul>
+			<div id="app_list"></div>
+		  </ul>
+		</div>
+	</div>
+</div>
+</template>
+<script>
+	$$(document).on('page:init', function(e) {
+		var api_url = "assets/stores.json";
+		app.request.post(api_url, function(jdata){
+				app.dialog.close();
+				var data = JSON.parse(jdata);
+				var data_case_list = '';
+				if(data.aaData != undefined){
+					for (var i = 0; i < data.aaData.length; i++) {
+							data_case_list += '<li>';
+							//data_case_list += data.aaData[i].appname;
+							data_case_list += data.aaData[i].appdescription;
+							data_case_list += '</li>';									
+					}
+					$$('#app_list').html(data_case_list);
+					$$('.page-content').scrollTop(0);
+					
+					notFound.style.display = 'none';
+					found.style.display = 'block';
+				} else {
+					//no items found
+					app.dialog.alert('No Item Found!');
+				}
+			},
+			function(err){
+				app.dialog.close();
+				found.style.display = 'none';
+				$$('#err_msg').html("<ul><li><a style='color: var(--f7-block-text-color);'>No record found.</a></li></ul>");
+				notFound.style.display = "block";
+			});
+	})
+	return {
+		methods: {
+			list_ajax: function() {
+				app.dialog.preloader();
+				var api_url = "assets/stores.json";
+				var v_info = '';
+				app.request.post(api_url, v_info, function(jdata){
+					var data = JSON.parse(jdata);
+					app.dialog.close();
+					var data_case_list = '';
+					if(data.aaData != undefined){
+						for (var i = 0; i < data.aaData.length; i++) {
+								data_case_list += '<li>';
+								//data_case_list += data.aaData[i].appname;
+								data_case_list += data.aaData[i].appdescription;
+								data_case_list += '</li>';									
+						}
+						$$('#app_list').html(data_case_list);
+						$$('.page-content').scrollTop(0);
+						
+						notFound.style.display = 'none';
+						found.style.display = 'block';
+					} else {
+						//no items found
+						app.dialog.alert('No Item Found!');
+					}
+				},
+				function(err){
+					app.dialog.close();
+					found.style.display = 'none';
+					$$('#err_msg').html("<ul><li><a style='color: var(--f7-block-text-color);'>No record found.</a></li></ul>");
+					notFound.style.display = "block";
+				});
+            }
+		},
+		on: {
+			pageMounted: function(e, page) {
+				var page = this;
+				page.list_ajax();
+				
+				var page = this;
+				
+				//pull to refresh				
+                var $prtContent = $$('.ptr-content.dash-page');
+                $prtContent.on('ptr:refresh', function(e) {
+                    //console.log('pull to refresh');
+					page.list_ajax();
+                });				
+			}
+		},
+	}
+</script>
