@@ -1,4 +1,4 @@
-
+var timestamp   = Date.now();
 var routes = [
   {
     path: '/',
@@ -6,8 +6,7 @@ var routes = [
   },
   {
 	path: '/mainpage/',
-	//url: './pages/main.html'
-	componentUrl: './pages/main.html'
+	componentUrl: './pages/main.html?'+timestamp,
   },
   // Default route (404 page). MUST BE THE LAST
   {
