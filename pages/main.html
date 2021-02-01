@@ -19,7 +19,8 @@
 </template>
 <script>
 	$$(document).on('page:init', function(e) {
-		var api_url = "assets/stores.json";
+		//var api_url = "assets/stores.json";
+		var api_url = "https://cyclonmaster.github.io/appstore/assets/stores.json";
 		app.request.post(api_url, function(jdata){
 				app.dialog.close();
 				var data = JSON.parse(jdata);
@@ -52,7 +53,8 @@
 		methods: {
 			list_ajax: function() {
 				app.dialog.preloader();
-				var api_url = "assets/stores.json";
+				//var api_url = "assets/stores.json";
+				var api_url = "https://cyclonmaster.github.io/appstore/assets/stores.json";
 				var v_info = '';
 				app.request.post(api_url, v_info, function(jdata){
 					var data = JSON.parse(jdata);
