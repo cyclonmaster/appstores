@@ -11,7 +11,13 @@
 	<div class="page-content">
 		<div class="list media-list chevron-center">
 		  <ul>
-			<div id="app_list"></div>
+			<!--<div id="app_list"></div>-->
+			<li>
+				<center><table border='0'><tbody><tr><td rowspan='2' valign='top' style='vertical-align: middle;'><div><img src='assets/NangAntapTu.png' height='100' width='100'></div></td><td valign='top'>&nbsp;<br></td><td valign='top'><big><b>NangAntapTu</b></big></td><td rowspan='2' valign='top' style='vertical-align: middle;'><div align='center'>Scan Me<br><img src='assets/cyclonappstore.png' height='100' width='100'><br><form method='get' action='assets/NangAntapTuv1.1.2.apk'><button type='submit' class='btn'><i class='fa fa-download'></i> Download Now</button></form></div></td></tr><tr><td valign='top'></td><td valign='top'><div>Baca Komik HK dengan mudah. Wajah baru dengan sistem yang lebih dinamik. Lebih ringan dan mesra pembaca.</div><div><i>Platform:Android</i></div><div><i>Version:1.1.2</i></div><div><i>Release: 21/01/2021</i></div></td></tr></tbody></table></center>
+			</li>
+			<li>
+				<center>Join, Follow & Subscribe Now<br><div><a title='Blog'href='https://cyclonmaster.blogspot.com/'><img id='img'alt=''height='50'width='50'src='assets/Blogger.png'></a>&nbsp;&nbsp;<a title='Facebook'href='https://www.facebook.com/MasterCyclon'><img id='img'alt=''height='50'width='50'src='assets/Facebook.png'></a>&nbsp;&nbsp;<a title='Shopee'href='https://shopee.com.my/mohdkhairunnasir'><img id='img'alt=''height='50'width='50'src='assets/shopee.png'></a>&nbsp;&nbsp;<a title='Youtube'href='https://www.youtube.com/MohdKhairunNasirSaadi'><img id='img'alt=''height='50'width='50'src='assets/YouTube.png'></a>&nbsp;&nbsp;<a title='Discord'href='https://discord.link/cygnosisadventurers'><img id='img'alt=''height='50'width='50'src='assets/Discord.png'></a><a title='Telegram'href='https://t.me/komikmanhua'><img id='img'alt=''height='50'width='50'src='assets/telegram.png'></a></div></center>
+			</li>
 		  </ul>
 		</div>
 	</div>
@@ -20,7 +26,7 @@
 <script>
 	$$(document).on('page:init', function(e) {
 		//var api_url = "assets/stores.json";
-		var api_url = "https://cyclonmaster.github.io/appstore/assets/stores.json";
+		/*var api_url = "https://cyclonmaster.github.io/appstore/assets/stores.json";
 		app.request.post(api_url, function(jdata){
 				app.dialog.close();
 				var data = JSON.parse(jdata);
@@ -47,11 +53,11 @@
 				//found.style.display = 'none';
 				$$('#err_msg').html("<ul><li><a style='color: var(--f7-block-text-color);'>No record found.</a></li></ul>");
 				//notFound.style.display = "block";
-			});
+			});*/
 	})
 	return {
 		methods: {
-			list_ajax: function() {
+			/*list_ajax: function() {
 				app.dialog.preloader();
 				//var api_url = "assets/stores.json";
 				var api_url = "https://cyclonmaster.github.io/appstore/assets/stores.json";
@@ -83,10 +89,10 @@
 					$$('#err_msg').html("<ul><li><a style='color: var(--f7-block-text-color);'>No record found.</a></li></ul>");
 					//notFound.style.display = "block";
 				});
-            }
+            }*/
 		},
 		on: {
-			pageMounted: function(e, page) {
+			/*pageMounted: function(e, page) {
 				var page = this;
 				page.list_ajax();
 				
@@ -98,7 +104,7 @@
                     //console.log('pull to refresh');
 					page.list_ajax();
                 });				
-			}
+			}*/
 		},
 	}
 </script>
